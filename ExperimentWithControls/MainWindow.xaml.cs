@@ -68,5 +68,14 @@ namespace ExperimentWithControls
                 number.Text = listBoxItem.Content.ToString();
             }
         }
+
+        private void editableComboBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if(sender is ComboBox comboBox)
+            {
+                number.Text = comboBox.Text;
+            }
+        }
+
     }
 }
