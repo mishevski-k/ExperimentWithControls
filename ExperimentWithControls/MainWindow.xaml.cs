@@ -60,5 +60,13 @@ namespace ExperimentWithControls
                 number.Text = listBoxItem.Content.ToString();
             }
         }
+
+        private void readOnlyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(readOnlyComboBox.SelectedItem is ListBoxItem listBoxItem)
+            {
+                number.Text = listBoxItem.Content.ToString();
+            }
+        }
     }
 }
